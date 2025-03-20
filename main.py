@@ -8,16 +8,16 @@ import pickle
 app = Flask(__name__)
 
 # load databasedataset===================================
-sym_des = pd.read_csv(r"C:\Users\india\OneDrive - Chandigarh University\Desktop\p\symtoms_df.csv")
-precautions = pd.read_csv(r"C:\Users\india\OneDrive - Chandigarh University\Desktop\p\precautions_df.csv")
-workout = pd.read_csv(r"C:\Users\india\OneDrive - Chandigarh University\Desktop\p\workout_df.csv")
-description = pd.read_csv(r"C:\Users\india\OneDrive - Chandigarh University\Desktop\p\description.csv")
-medications = pd.read_csv(r'C:\Users\india\OneDrive - Chandigarh University\Desktop\p\medications.csv')
-diets = pd.read_csv(r"C:\Users\india\OneDrive - Chandigarh University\Desktop\p\diets.csv")
+sym_des = pd.read_csv("symtoms_df.csv")
+precautions = pd.read_csv("precautions_df.csv")
+workout = pd.read_csv("workout_df.csv")
+description = pd.read_csv("description.csv")
+medications = pd.read_csv('medications.csv')
+diets = pd.read_csv("diets.csv")
 
 
 # load model===========================================
-svc = pickle.load(open(r'C:\Users\india\OneDrive - Chandigarh University\Desktop\p\svc.pkl','rb'))
+svc = pickle.load(open('svc.pkl','rb'))
 
 
 #============================================================
